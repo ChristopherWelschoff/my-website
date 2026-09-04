@@ -38,7 +38,8 @@ body {
     width: 100%;
     background-color: var(--bg-primary);
     color: var(--text-primary);
-    font-family: ${lora.style.fontFamily};;   
+    font-family: ${lora.style.fontFamily};
+    min-height: 100vh;
 }
 `;
 
