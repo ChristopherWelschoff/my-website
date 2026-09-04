@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 
+
 export default function Home() {
   return (
     <MainContent>
@@ -30,6 +31,7 @@ export default function Home() {
           <StyledButtonRight>Button rechts</StyledButtonRight>
         </ButtonContainer>
       </StyledTitle>
+     
     </MainContent>
   );
 }
