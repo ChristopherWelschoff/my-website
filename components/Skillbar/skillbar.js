@@ -34,7 +34,7 @@ const SkillsContainer = styled.ul`
   flex-direction: row;
   justify-content: center;
 
-  gap: 80px;
+  gap: 70px;
   list-style: none;
   border: solid white 1px;
 `;
