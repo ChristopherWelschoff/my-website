@@ -17,13 +17,12 @@ export default function Layout({ children }) {
 
       <StyledMain>{children}</StyledMain>
 
-      <StyledFooter>Placeholder</StyledFooter>
+      {/* <StyledFooter>Placeholder</StyledFooter> */}
     </Page>
   );
 }
 
 const Page = styled.div`
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 `;
@@ -56,8 +55,8 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const StyledFooter = styled.footer`
-  width: 100%;
-  border: solid white 2px;
-  padding: 20px;
-`;
+// const StyledFooter = styled.footer`
+//   width: 100%;
+//   border: solid white 2px;
+//   padding: 20px;
+// `;

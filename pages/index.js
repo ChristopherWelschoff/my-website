@@ -39,6 +39,7 @@ const MainContent = styled.div`
   justify-content: space-around;
   font-size: 1.15rem;
   width: 95%;
+  min-height: 80vh;
   margin: 0 auto;
   border: solid white 2px;
 `;
