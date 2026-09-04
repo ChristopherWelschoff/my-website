@@ -86,9 +86,10 @@ const AboutText = styled.p`
 
 const ButtonContainer = styled.div`
   display: flex;
-  padding: 20px;
+  justify-content: flex-start;
   gap: 30px;
   margin-top: 30px;
+
 `;
 
 const StyledButtonLeft = styled.button`
