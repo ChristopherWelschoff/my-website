@@ -44,6 +44,8 @@ const StyledListItem = styled.li`
   gap: 5px;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 24px 48px;
   background-color: var(--bg-card);
+
+  /* filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.25)); */
 `;

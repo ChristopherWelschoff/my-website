@@ -8,7 +8,6 @@ export default function App({ Component, pageProps }) {
       <GlobalStyle />
       <Layout>
         <Component {...pageProps} />
-        <Skillbar />
       </Layout>
     </>
   );

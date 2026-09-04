@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
 
-
 export default function Home() {
   return (
     <MainContent>
@@ -31,7 +30,6 @@ export default function Home() {
           <StyledButtonRight>Button rechts</StyledButtonRight>
         </ButtonContainer>
       </StyledTitle>
-     
     </MainContent>
   );
 }
@@ -41,6 +39,7 @@ const MainContent = styled.div`
   justify-content: space-around;
   font-size: 1.15rem;
   width: 95%;
+  min-height: 80vh;
   margin: 0 auto;
   border: solid white 2px;
 `;
