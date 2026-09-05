@@ -8,10 +8,10 @@ export default function Layout({ children }) {
         <h3>CW</h3>
 
         <LinkContainer>
-          <StyledLink href="/projects">Projekte</StyledLink>
+          <StyledLink href="/">Home</StyledLink>
+          <StyledLink href="">Experiencne</StyledLink>
           <StyledLink href="">Button</StyledLink>
-          <StyledLink href="">Button</StyledLink>
-          <StyledLink href="">Button</StyledLink>
+          <StyledLink href="/contact">Contact</StyledLink>
         </LinkContainer>
       </StyledHeader>
 
@@ -25,6 +25,7 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: solid var(--accent-green) 3px;
   /* background-color: var(--bg-card); */
 `;
 

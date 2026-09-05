@@ -35,6 +35,7 @@ const StyledLink = styled(Link)`
 `;
 
 const WelcomeTextContainer = styled.div`
+  margin-top: 30px;
   font-weight: 900;
   font-size: 1rem;
 
