@@ -8,7 +8,7 @@ export default function Layout({ children }) {
         <h3>CW</h3>
 
         <LinkContainer>
-          <StyledLink href="">Button</StyledLink>
+          <StyledLink href="/projects">Projekte</StyledLink>
           <StyledLink href="">Button</StyledLink>
           <StyledLink href="">Button</StyledLink>
           <StyledLink href="">Button</StyledLink>

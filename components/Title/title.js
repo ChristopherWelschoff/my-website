@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 export default function Title() {
   return (
@@ -17,12 +18,21 @@ export default function Title() {
       </AboutText>
 
       <ButtonContainer>
-        <StyledButtonLeft>StyledButton links</StyledButtonLeft>
-        <StyledButtonRight>StyledButton rechts</StyledButtonRight>
+        <StyledLink href="/projects">
+          <StyledButtonLeft>Projekte</StyledButtonLeft>
+        </StyledLink>
+        <StyledLink href="">
+          <StyledButtonRight>StyledButton rechts</StyledButtonRight>
+        </StyledLink>
       </ButtonContainer>
     </WelcomeTextContainer>
   );
 }
+
+const StyledLink = styled(Link)`
+  color: var(--text-primary);
+  text-decoration: none;
+`;
 
 const WelcomeTextContainer = styled.div`
   font-weight: 900;
