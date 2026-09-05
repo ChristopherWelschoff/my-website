@@ -4,48 +4,18 @@ import styled from "styled-components";
 
 export default function Skillbar() {
   return (
-    <>
-      <SkillTextContainer>
-        <p>Tech-Stack</p>
-      </SkillTextContainer>
-      <SkillsContainer>
+    <div>
+      <div>Tech-Stack</div>
+
+      <ul>
         {skills.map((skill) => {
           return (
-            <>
-              <StyledListItem key={skill.name}>
-                <Image width={48} height={48} alt="skill" src={skill.icon} />
-                <p>{skill.name}</p>
-              </StyledListItem>
-            </>
+            <li key={skill.name}>
+              <Image alt={skill.name} width={48} height={48} src={skill.icon} />
+            </li>
           );
         })}
-      </SkillsContainer>
-    </>
+      </ul>
+    </div>
   );
 }
-
-const SkillTextContainer = styled.div`
-  display: flex;
-  justify-content: flex-start;
-`;
-
-const SkillsContainer = styled.ul`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  gap: 70px;
-  list-style: none;
-  border: solid white 1px;
-`;
-
-const StyledListItem = styled.li`
-  display: flex;
-  gap: 5px;
-  flex-direction: column;
-  justify-content: center;
-  padding: 24px 48px;
-  background-color: var(--bg-card);
-
-  /* filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.25)); */
-`;

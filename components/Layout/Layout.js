@@ -3,60 +3,64 @@ import Link from "next/link";
 
 export default function Layout({ children }) {
   return (
-    <Page>
+    <div>
       <StyledHeader>
-        <h2>Christopher</h2>
+        <h3>Christopher Welschoff</h3>
 
-        <StyledLinkContainer>
+        <LinkContainer>
           <StyledLink href="">Button</StyledLink>
           <StyledLink href="">Button</StyledLink>
           <StyledLink href="">Button</StyledLink>
           <StyledLink href="">Button</StyledLink>
-        </StyledLinkContainer>
+        </LinkContainer>
       </StyledHeader>
 
-      <StyledMain>{children}</StyledMain>
-
-      {/* <StyledFooter>Placeholder</StyledFooter> */}
-    </Page>
+      <main>{children}</main>
+    </div>
   );
 }
 
-const Page = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const StyledMain = styled.main`
-  flex: 1;
-`;
-
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
+  padding: 20px;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  margin-top: 50px;
+  align-items: center;
 `;
 
-const StyledLinkContainer = styled.div`
+const LinkContainer = styled.div`
   display: flex;
-  gap: 20px;
-  font-size: 1rem;
+  align-items: center;
+
+  gap: 10px;
 `;
 
 const StyledLink = styled(Link)`
+  position: relative;
   color: var(--text-primary);
   text-decoration: none;
-  margin-right: 50px;
+  font-weight: 600;
+
+  transition: color 0.2s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: var(--accent-green-hover);
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
 
   &:hover {
-    text-decoration: underline;
     color: var(--accent-green-hover);
   }
-`;
 
-// const StyledFooter = styled.footer`
-//   width: 100%;
-//   border: solid white 2px;
-//   padding: 20px;
-// `;
+  &:hover::after {
+    transform: scaleX(1);
+  }
+`;

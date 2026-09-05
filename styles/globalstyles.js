@@ -14,33 +14,56 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+
+
   :root {
     /* Hintergrundfarben */
-    --bg-primary: #0a0a0c; /* Haupthintergrund (sehr dunkles Anthrazit/Schwarz) */
-    --bg-card: #131418; /* Container & Cards */
-    --bg-card-hover: #1c1d22; /* Interaktive Flächen bei Hover */
+    --bg-primary: #0a0a0c;
+    --bg-card: #131418;
+    --bg-card-hover: #1c1d22;
+    --header-accent: #8a8f7a;
 
     /* Textfarben */
-    --text-primary: #ffffffb6; /* Haupttext & Überschriften */
-    --text-secondary: #8d8e92; /* Muted Text / Labels */
-    --text-dimmed: #5c5d61; /* Inaktive Elements & Subtitles */
+    --text-primary: #ffffffb6;
+    --text-secondary: #8d8e92;
+    --text-dimmed: #5c5d61;
 
     /* Akzentfarben */
-    --accent-green: #718355; /* Olivgrün (Button-Akzent) */
+    --accent-green: #718355;
     --accent-green-hover: #819662;
 
     /* Rahmentöne */
-    --border-muted: #24262b; /* Dezente Trennlinien & Rahmen */
-    --border-active: #ffffff; /* Aktive Indikatoren */
+    --border-muted: #24262b;
+    --border-active: #ffffff;
+
+    /* Spacing-System (Mobile-Werte als Basis) */
+    --space-section: 32px;
+    --space-container: 16px;
+    --space-inline: 12px;
   }
 
-body {
-    width: 100%;
+  @media (min-width: 768px) {
+    :root {
+      --space-section: 60px;
+      --space-container: 40px;
+      --space-inline: 20px;
+    }
+  }
+
+  body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     font-family: ${lora.style.fontFamily};
     min-height: 100vh;
-}
+    min-height: 100dvh;
+   
+  }
+
+  main {
+    flex: 1;
+    width: 80%;
+    margin: 0 auto
+  }
 `;
 
 export default GlobalStyle;
