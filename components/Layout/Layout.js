@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <div>
       <StyledHeader>
-        <h3>Christopher Welschoff</h3>
+        <h3>CW</h3>
 
         <LinkContainer>
           <StyledLink href="">Button</StyledLink>
