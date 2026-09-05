@@ -18,9 +18,9 @@ export default function Home() {
         <Title />
       </HeroCard>
 
-      {/* <div>
+      <div>
         <Skillbar />
-      </div> */}
+      </div>
     </div>
   );
 }
@@ -34,10 +34,14 @@ const HeroCard = styled.div`
 const StyledImage = styled(Image)`
   width: 140px;
   height: 180px;
-
+  opacity: 0.6;
   border-radius: 16px;
   object-fit: cover;
-  object-position: center 15%;
+  object-position: center 30%;
+  background: transparent;
+  filter: drop-shadow(-30px 0px 50px rgba(255, 255, 255, 0.4));
+
+  clip-path: circle(50% at center);
 
   flex-shrink: 0;
 

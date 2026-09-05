@@ -42,6 +42,11 @@ const AboutText = styled.p`
   margin-top: 30px;
   font-weight: 300;
   line-height: 1.6;
+  font-size: 0.8rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const ButtonContainer = styled.div`
@@ -54,6 +59,14 @@ const StyledButtonLeft = styled.button`
   padding: 6px 12px;
   background-color: var(--accent-green);
   color: var(--test-secondary);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  &:hover {
+    background-color: var(--bg-card);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(210, 207, 207, 0.25);
+  }
 
   @media (min-width: 768px) {
     padding: 16px 36px;
@@ -64,6 +77,14 @@ const StyledButtonRight = styled.button`
   padding: 6px 12px;
   background-color: var(--bg-card);
   color: var(--test-secondary);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  &:hover {
+    background-color: var(--accent-green);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(210, 207, 207, 0.25);
+  }
 
   @media (min-width: 768px) {
     padding: 16px 36px;

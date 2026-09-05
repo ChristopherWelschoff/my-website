@@ -25,6 +25,7 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background-color: var(--bg-card); */
 `;
 
 const LinkContainer = styled.div`
@@ -62,5 +63,9 @@ const StyledLink = styled(Link)`
 
   &:hover::after {
     transform: scaleX(1);
+  }
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    margin-right: 30px;
   }
 `;
