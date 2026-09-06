@@ -7,7 +7,7 @@ export default function Skillbar() {
     <div>
       <ul>
         <SkillList>
-          <SkillTitle>Tech-Stack</SkillTitle>
+          <SkillTitle>Mein Tech-Stack</SkillTitle>
           <SkillContainer>
             {skills.map((skill) => {
               return (

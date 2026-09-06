@@ -10,11 +10,8 @@ export default function Title() {
       <JobText>Frontend Developer</JobText>
 
       <AboutText>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur.
+        Vom Schaltschrank zum Code – willkommen auf meiner Webseite. Hier
+        findest du meine Projekte und mehr Informationen über mich..
       </AboutText>
 
       <ButtonContainer>
@@ -53,7 +50,7 @@ const AboutText = styled.p`
   margin-top: 30px;
   font-weight: 300;
   line-height: 1.6;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 
   @media (min-width: 768px) {
     font-size: 1.5rem;
