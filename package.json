@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "start": "node index.js",
+    "test": "jest"
   },
   "dependencies": {
     "next": "16.3.4",
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "eslint": "^9",
-    "eslint-config-next": "16.3.4"
+    "eslint-config-next": "16.3.4",
+    "jest": "^30.5.1"
   }
 }
